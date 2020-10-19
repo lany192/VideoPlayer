@@ -8,7 +8,7 @@ public class JZDataSource {
     public static final String URL_KEY_DEFAULT = "URL_KEY_DEFAULT";
 
     public int currentUrlIndex;
-    public LinkedHashMap urlsMap = new LinkedHashMap();
+    public LinkedHashMap<String, Object> urlsMap = new LinkedHashMap<>();
     public String title = "";
     public HashMap<String, String> headerMap = new HashMap<>();
     public boolean looping = false;
@@ -30,13 +30,13 @@ public class JZDataSource {
         currentUrlIndex = 0;
     }
 
-    public JZDataSource(LinkedHashMap urlsMap) {
+    public JZDataSource(LinkedHashMap<String,Object> urlsMap) {
         this.urlsMap.clear();
         this.urlsMap.putAll(urlsMap);
         currentUrlIndex = 0;
     }
 
-    public JZDataSource(LinkedHashMap urlsMap, String title) {
+    public JZDataSource(LinkedHashMap<String,Object> urlsMap, String title) {
         this.urlsMap.clear();
         this.urlsMap.putAll(urlsMap);
         this.title = title;
@@ -81,7 +81,7 @@ public class JZDataSource {
     }
 
     public JZDataSource cloneMe() {
-        LinkedHashMap map = new LinkedHashMap();
+        LinkedHashMap<String,Object> map = new LinkedHashMap<>();
         map.putAll(urlsMap);
         return new JZDataSource(map, title);
     }

@@ -19,13 +19,6 @@ public class ApplicationDemo extends Application {
         return app.proxy == null ? (app.proxy = app.newProxy()) : app.proxy;
     }
 
-    @Override
-    public void onCreate() {
-        super.onCreate();
-//        LeakCanary.install(this);
-
-    }
-
     private HttpProxyCacheServer newProxy() {
         return new HttpProxyCacheServer(this);
     }

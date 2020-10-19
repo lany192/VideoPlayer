@@ -11,13 +11,11 @@ import android.view.TextureView;
  * 自定义播放器
  */
 public abstract class JZMediaInterface implements TextureView.SurfaceTextureListener {
-
     public static SurfaceTexture SAVED_SURFACE;
     public HandlerThread mMediaHandlerThread;
     public Handler mMediaHandler;
     public Handler handler;
     public Jzvd jzvd;
-
 
     public JZMediaInterface(Jzvd jzvd) {
         this.jzvd = jzvd;

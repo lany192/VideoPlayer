@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">饺子播放器</string>
+    <string name="app_name">播放器</string>
     <string name="base">基础</string>
     <string name="custom">自定义</string>
     <string name="complex">列表</string>
     <string name="other">更多</string>
-    <string name="big_ui_change">大改饺子播放器(自定义)</string>
+    <string name="big_ui_change">大改播放器(自定义)</string>
     <string name="orientation">分别设置全屏前和全屏后的屏幕方向</string>
     <string name="extend_activity">继承Activity非AppCompatActivity</string>
     <string name="video_cover_and_orientation">调整视频填充方式、播放方向</string>
